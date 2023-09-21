@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://db:5432/hapi'
+    username: admin
+    password: admin
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
+      hibernate.search.enabled: false
+
+elasticsearch:
+ debug:
+   pretty_print_json_log: false
+   refresh_after_write: false
+ enabled: true
+ username: elastic
+ password: mypassword
+ required_index_status: YELLOW
+ rest_url: '0.0.0.0:9200'
+ protocol: 'http'
+ schema_management_strategy: CREATE
