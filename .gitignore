@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+elasticsearch-data/
+hapi.postgress.data/
 __pycache__/
 *.py[cod]
 *$py.class
